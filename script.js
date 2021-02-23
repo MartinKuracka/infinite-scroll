@@ -49,7 +49,6 @@ async function getPhotosfromAPI() {
 }
 
 // scrolling listener
-
 window.addEventListener('scroll', () => {
     window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ArePicturesLoaded === true
         ? getPhotosfromAPI()
