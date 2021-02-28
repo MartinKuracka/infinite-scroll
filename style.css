@@ -18,9 +18,8 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  font-size: 30px;
+  align-self: center;
+  font-size: 28px;
   /* letter-spacing: 5px; */
   color: rgb(80, 62, 5);
   z-index: 100;
@@ -34,8 +33,20 @@ h1 {
   position: fixed;
   display: flex;
   justify-content: center;
+  /* flex-direction: column; */
   background-color: #D4CFBC;
   /* align-items: center; */
+}
+
+.header img {
+  /* position: absolute; */
+  /* margin-top: 11vh; */
+  width: 100px;  
+  height: auto;
+  align-self: center;
+  background-color: #d4cfbc;
+  padding: 2vw;
+  border-radius: 40%;
 }
 
 .head-img {
@@ -84,10 +95,15 @@ h1 {
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 14px;
+
   }
 
   .head-img {
    margin-top: -30px;
+  }
+
+  .header img {
+    width: 60px;
   }
 }
