@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
 body {
-  background-image: url(back.png);
+  background-color: #eaeadf;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23726017' fill-opacity='0.26'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 html {
@@ -10,7 +11,8 @@ html {
 
 body {
   margin: 0;
-  font-family: Bebas Neue, sans-serif;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 5px;
   background-color: whitesmoke;
 }
 
@@ -18,11 +20,33 @@ h1 {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 50px;
-  font-size: 40px;
-  letter-spacing: 5px;
+  font-size: 30px;
+  /* letter-spacing: 5px; */
+  color: rgb(80, 62, 5);
+  z-index: 100;
 }
 
-/* loadre */
+/* Header */
+
+.header {
+  top: 0px;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: #D4CFBC;
+  /* align-items: center; */
+}
+
+.head-img {
+  position: fixed;
+  align-self: center;
+  /* top: 0px; */
+  width: 60vw;
+  height: 20vh;
+}
+
+/* loader */
 
 .loader {
   position: fixed;
@@ -43,22 +67,27 @@ h1 {
 /* unsplash images */
 .img-container {
   margin: 10px 25%;
-  cursor:pointer
+  cursor:pointer;
 }
 
 .img-container img {
   width: 100%;
   margin-top: 5px;
+  border: 3px #D4CFBC solid;
 }
 
 /* mediaquerries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .img-container {
     margin: 10px;
   }
 
   h1 {
     font-size: 20px;
+  }
+
+  .head-img {
+   margin-top: -30px;
   }
 }
